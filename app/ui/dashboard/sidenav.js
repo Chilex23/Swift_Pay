@@ -1,16 +1,24 @@
 import Link from "next/link";
+import Image from "next/image";
 import NavLinks from "@/app/ui/dashboard/nav-links";
 import { PhoneIcon, GiftIcon } from "@heroicons/react/24/outline";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2">
+    <div className="flex h-full flex-col px-3 py-1 md:px-2">
       <Link
-        className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-20"
+        className="mb-2 flex h-20 items-end justify-start rounded-md p-4 md:h-20"
         href="/"
       >
-        <div className="w-32 text-white md:w-40">
-          <p>Swift Pay</p>
+        <div className="w-32 flex gap-x-2 text-black md:w-40">
+          <Image
+            src="/Vector.png"
+            width={20}
+            height={20}
+            className=""
+            alt="Swift Pay Logo"
+          />
+          <p className="text-2xl font-bold">Swift</p>
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
@@ -25,9 +33,25 @@ export default function SideNav() {
             <GiftIcon className="w-6" />
             <div className="hidden md:block">Referral</div>
           </button>
-          <div className="w-full h-24 rounded-md bg-black">
-            &nbsp;
+          {/* Bottom */}
+          <div className="rounded-md h-fit bg-[#111827] text-white relative">
+            <div className="mt-4 mx-4">
+              <p className="font-semibold leading-5">
+                Get started with your investment
+              </p>
+              <p className="text-xs mt-3">
+                Get to choose the package that works for you
+              </p>
+            </div>
+            <Image
+              src="/trophy.png"
+              width={200}
+              height={200}
+              className="relative translate-x-[85px] -translate-y-[24px] -rotate-[35deg] -z-0"
+              alt="trophy"
+            />
           </div>
+          {/* Bottom */}
         </div>
       </div>
     </div>

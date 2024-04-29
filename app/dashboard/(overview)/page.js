@@ -3,6 +3,7 @@ import {
   PlusIcon,
   BanknotesIcon,
   PaperAirplaneIcon,
+  LinkIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -18,15 +19,15 @@ export default function Page() {
             </span>
           </p>
         </div>
-        <div className="flex items-center gap-x-1">
+        <div className="flex items-center gap-x-2">
           <Image
-            src="/balazs-orban.png"
+            src="/avatar.png"
             width={50}
             height={50}
-            className="rounded-full"
-            alt="User profile"
+            className="rounded-full bg-[#EB963F]"
+            alt="Avatar profile"
           />
-          <p>
+          <p className="text-sm font-medium">
             <span>John Doe</span>
           </p>
         </div>
@@ -34,20 +35,19 @@ export default function Page() {
       {/* Header for username */}
       <h2 className="text-2xl font-semibold">Account Summary</h2>
       {/* At a glance header */}
-      <div className="border-t-2 border-t-gray-300 mt-10 flex justify-between py-4">
+      <div className="border-t-2 border-t-gray-300 mt-5 flex justify-between py-5">
         {/* Glance 1 */}
-        <div>
+        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Account Balance</p>
               <p className="text-xl font-semibold">$10,032.67</p>
             </div>
             <Image
-              src="/balazs-orban.png"
-              width={100}
-              height={100}
-              className=""
-              alt="User profile"
+              src="/Line_Chart(Joe-Flores).png"
+              width={150}
+              height={150}
+              alt="Line Chart"
             />
           </div>
           <p className="text-sm mt-2">
@@ -56,18 +56,17 @@ export default function Page() {
         </div>
         {/* Glance 1 */}
         {/* Glance 2 */}
-        <div>
+        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Total Profit</p>
               <p className="text-xl font-semibold">$20,000.35</p>
             </div>
             <Image
-              src="/balazs-orban.png"
-              width={100}
-              height={100}
-              className=""
-              alt="User profile"
+              src="/Line_Chart(Joe-Flores).png"
+              width={150}
+              height={150}
+              alt="Line Chart"
             />
           </div>
           <p className="text-sm mt-2">
@@ -76,18 +75,17 @@ export default function Page() {
         </div>
         {/* Glance 2 */}
         {/* Glance 3 */}
-        <div>
+        <div className="px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Total Profit</p>
               <p className="text-xl font-semibold">$20,000.35</p>
             </div>
             <Image
-              src="/balazs-orban.png"
-              width={100}
-              height={100}
-              className=""
-              alt="User profile"
+              src="/Line_Chart(Joe-Flores).png"
+              width={150}
+              height={150}
+              alt="Line Chart"
             />
           </div>
           <p className="text-smm mt-2">
@@ -99,33 +97,27 @@ export default function Page() {
       {/* At a glance header */}
       {/* Special Buttons */}
       <div className="py-2 flex items-center justify-center gap-8">
-        <button className="flex gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
+        <button className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all">
           <span>Deposit Fund</span>
           <PlusIcon className="w-6" />
         </button>
-        <button className="flex gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black hover:shadow-lg hover:scale-105 transition-all">
+        <button className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
           <span>Withdraw Funds</span>
           <BanknotesIcon className="w-6" />
         </button>
-        <button className="flex gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black hover:shadow-lg hover:scale-105 transition-all">
+        <button className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
           <span>Transfer Funds</span>
           <PaperAirplaneIcon className="w-6" />
         </button>
       </div>
       {/* Special Buttons */}
       {/* Total Amount */}
-      <div className="py-4 mt-6 flex justify-between">
+      <div className="py-4 mt-6 flex gap-x-12">
         {/* Total 1 */}
         <div className="flex items-center gap-x-3">
-          <Image
-            src="/balazs-orban.png"
-            width={50}
-            height={50}
-            className=""
-            alt="User profile"
-          />
+          <Image src="/profit.png" width={25} height={25} alt="Money" />
           <div>
-            <p className="text-sm">Total Transactions</p>
+            <p className="text-sm">Total Deposit</p>
             <p>
               <span className="text-lg font-semibold">$100,000.35</span> = 3.5
               BTC
@@ -135,13 +127,7 @@ export default function Page() {
         {/* Total 1 */}
         {/* Total 2 */}
         <div className="flex items-center gap-x-3">
-          <Image
-            src="/balazs-orban.png"
-            width={50}
-            height={50}
-            className=""
-            alt="User profile"
-          />
+          <Image src="/withdrawal.png" width={50} height={50} alt="Money" />
           <div>
             <p className="text-sm">Total Withdrawal</p>
             <p>
@@ -153,13 +139,7 @@ export default function Page() {
         {/* Total 2 */}
         {/* Total 3 */}
         <div className="flex items-center gap-x-3">
-          <Image
-            src="/balazs-orban.png"
-            width={50}
-            height={50}
-            className=""
-            alt="User profile"
-          />
+          <Image src="/bonus.png" width={50} height={50} alt="Money" />
           <div>
             <p className="text-sm">Bonus</p>
             <p>
@@ -212,7 +192,8 @@ export default function Page() {
             <td className="whitespace-nowrap px-3 py-3">Deposit</td>
             <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
-              <button className="px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
+              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
+                <span className="h-2 w-2 rounded-full bg-[#FACC15]"></span>
                 Pending
               </button>
             </td>
@@ -227,7 +208,8 @@ export default function Page() {
             <td className="whitespace-nowrap px-3 py-3">Deposit</td>
             <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
-              <button className="px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
+              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
+                <span className="h-2 w-2 rounded-full bg-[#FACC15]"></span>
                 Pending
               </button>
             </td>
@@ -242,7 +224,8 @@ export default function Page() {
             <td className="whitespace-nowrap px-3 py-3">Transfer</td>
             <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
-              <button className="px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
+              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
+              <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
                 Successful
               </button>
             </td>
@@ -250,6 +233,38 @@ export default function Page() {
         </tbody>
       </table>
       {/* Table for recent transactions */}
+      {/* Bottom Wrapper */}
+      <div className="bg-[#111827] text-white mt-16 rounded-xl p-10 flex justify-between items-center gap-x-5">
+        <div className="w-2/4">
+          <p className="text-3xl font-semibold">Refer a friend and earn $5</p>
+          <p className="font-normal leading-6s text-gray-100 mt-4">
+            Share your referral code and get $5 when your refer signs up and
+            make transactions of over $500
+          </p>
+          <div className="flex gap-x-4 mt-10">
+            <input
+              name="referral_link"
+              type="text"
+              placeholder="Enter the referral link here"
+              className="block rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-[#4B5563]"
+            />
+            <button className="flex items-center gap-x-1 bg-[#6366F1] py-2 px-4 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
+              <LinkIcon className="w-6" />
+              <span>Copy Link</span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <Image
+            src="/wallet.png"
+            width={200}
+            height={200}
+            className=""
+            alt="Wallet"
+          />
+        </div>
+      </div>
+      {/* Bottom Wrapper */}
     </>
   );
 }
