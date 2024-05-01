@@ -26,7 +26,7 @@ const links = [
   },
   {
     name: "Profit History",
-    href: "/dashboard/profit_history",
+    href: "/dashboard/profit-history",
     icon: ArrowTrendingUpIcon,
   },
   {
