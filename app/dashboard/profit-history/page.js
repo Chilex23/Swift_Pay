@@ -92,16 +92,16 @@ export default function Page() {
         <thead className="rounded-lg text-left text-sm font-normal">
           <tr>
             <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-              Date/Time
+             Amount Invested
             </th>
             <th scope="col" className="px-3 py-5 font-medium">
-              Amount
+              Plan
             </th>
             <th scope="col" className="px-3 py-5 font-medium">
-              Type
+              Expected Profit
             </th>
             <th scope="col" className="px-3 py-5 font-medium">
-              Description
+              Due Date
             </th>
             <th scope="col" className="px-3 py-5 font-medium">
               Status
@@ -110,14 +110,17 @@ export default function Page() {
         </thead>
         <tbody className="bg-white">
           <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
+            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
+            <td className="whitespace-nowrap px-3 py-3 flex gap-x-2 items-center h-16">
+              <Image src="/bronze-trophy.png" width={20} height={20} />
+              <span>Bronze Package</span>
+            </td>
+            <td className="whitespace-nowrap px-3 py-3">$100.34 = 1.5 BTC</td>
             <td className="whitespace-nowrap py-3 pl-6 pr-3">
               <div className="flex items-center gap-3">
                 <p>10 Feb 2024 20:46:21</p>
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Deposit</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
               <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
                 <span className="h-2 w-2 rounded-full bg-[#FACC15]"></span>
@@ -126,82 +129,59 @@ export default function Page() {
             </td>
           </tr>
           <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
+            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
+            <td className="whitespace-nowrap px-3 py-3 flex gap-x-2 items-center h-16">
+              <Image src="/silver-trophy.png" width={20} height={20} />
+              <span>Silver Package</span>
+            </td>
+            <td className="whitespace-nowrap px-3 py-3">$100.34 = 1.5 BTC</td>
             <td className="whitespace-nowrap py-3 pl-6 pr-3">
               <div className="flex items-center gap-3">
                 <p>10 Feb 2024 20:46:21</p>
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Deposit</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
-              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#CA8A04] bg-[#FEF9C3] font-medium text-xs">
-                <span className="h-2 w-2 rounded-full bg-[#FACC15]"></span>
-                Pending
+              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
+                <span className="h-2 w-2 rounded-full bg-[#12B76A]">&nbsp;</span>
+                <span>Invested</span>
               </button>
             </td>
           </tr>
           <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
+            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
+            <td className="whitespace-nowrap px-3 py-3 flex gap-x-2 items-center h-16">
+              <Image src="/gold-trophy.png" width={20} height={20} />
+              <span>Gold Package</span>
+            </td>
+            <td className="whitespace-nowrap px-3 py-3">$100.34 = 1.5 BTC</td>
             <td className="whitespace-nowrap py-3 pl-6 pr-3">
               <div className="flex items-center gap-3">
                 <p>10 Feb 2024 20:46:21</p>
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Transfer</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
               <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
-                <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
-                Successful
+                <span className="h-2 w-2 rounded-full bg-[#12B76A]">&nbsp;</span>
+                <span>Invested</span>
               </button>
             </td>
           </tr>
           <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
+            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
+            <td className="whitespace-nowrap px-3 py-3 flex gap-x-2 items-center h-16">
+              <Image src="/diamond-trophy.png" width={20} height={20} />
+              <span>Diamond Package</span>
+            </td>
+            <td className="whitespace-nowrap px-3 py-3">$100.34 = 1.5 BTC</td>
             <td className="whitespace-nowrap py-3 pl-6 pr-3">
               <div className="flex items-center gap-3">
                 <p>10 Feb 2024 20:46:21</p>
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Transfer</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
               <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
-                <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
-                Successful
-              </button>
-            </td>
-          </tr>
-          <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
-            <td className="whitespace-nowrap py-3 pl-6 pr-3">
-              <div className="flex items-center gap-3">
-                <p>10 Feb 2024 20:46:21</p>
-              </div>
-            </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Transfer</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
-            <td className="whitespace-nowrap py-3 px-3">
-              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
-                <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
-                Successful
-              </button>
-            </td>
-          </tr>
-          <tr className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
-            <td className="whitespace-nowrap py-3 pl-6 pr-3">
-              <div className="flex items-center gap-3">
-                <p>10 Feb 2024 20:46:21</p>
-              </div>
-            </td>
-            <td className="whitespace-nowrap px-3 py-3">$100.35 = 1.5 BTC</td>
-            <td className="whitespace-nowrap px-3 py-3">Transfer</td>
-            <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
-            <td className="whitespace-nowrap py-3 px-3">
-              <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
-                <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
-                Successful
+                <span className="h-2 w-2 rounded-full bg-[#12B76A]">&nbsp;</span>
+                <span>Invested</span>
               </button>
             </td>
           </tr>
