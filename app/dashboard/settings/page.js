@@ -3,12 +3,13 @@ import Image from "next/image";
 import { useState } from "react";
 import AddAccount from "@/app/ui/dashboard/settings/add-accout";
 import Security from "@/app/ui/dashboard/settings/security";
+import Notifications from "@/app/ui/dashboard/settings/notifications";
 import clsx from "clsx";
 
 export default function Page() {
   const [accountDetails, setAccountDetails] = useState("Bank Account");
   const [tab, setTab] = useState("withdrawal");
-  console.log(tab)
+  console.log(tab);
   return (
     <>
       {/* Header for username */}
@@ -81,13 +82,17 @@ export default function Page() {
         </a>
       </div>
       {/* Tabs */}
-      {tab === "withdrawal" ? (
+      {tab !== "withdrawal" ? (
+        tab === "security" ? (
+          <Security />
+        ) : (
+          <Notifications />
+        )
+      ) : (
         <AddAccount
           setAccountDetails={setAccountDetails}
           accountDetails={accountDetails}
         />
-      ) : (
-        <Security />
       )}
     </>
   );

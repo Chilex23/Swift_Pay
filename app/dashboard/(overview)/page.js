@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   PlusIcon,
   BanknotesIcon,
@@ -97,18 +98,21 @@ export default function Page() {
       {/* At a glance header */}
       {/* Special Buttons */}
       <div className="py-2 flex items-center justify-center gap-8">
-        <button className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all">
+        <Link href={"/deposit-funds"} className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all">
           <span>Deposit Fund</span>
           <PlusIcon className="w-6" />
-        </button>
+        </Link>
         <button className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
           <span>Withdraw Funds</span>
           <BanknotesIcon className="w-6" />
         </button>
-        <button className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
+        <Link
+          href={"/transfer-funds"}
+          className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all"
+        >
           <span>Transfer Funds</span>
           <PaperAirplaneIcon className="w-6" />
-        </button>
+        </Link>
       </div>
       {/* Special Buttons */}
       {/* Total Amount */}
@@ -225,7 +229,7 @@ export default function Page() {
             <td className="whitespace-nowrap px-3 py-3">Greg69Xiwo23</td>
             <td className="whitespace-nowrap py-3 px-3">
               <button className="flex items-center gap-x-3 px-4 py-3 rounded-md text-[#027A48] bg-[#ECFDF3] font-medium text-xs">
-              <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
+                <span className="h-2 w-2 rounded-full bg-[#12B76A]"></span>
                 Successful
               </button>
             </td>
