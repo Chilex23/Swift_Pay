@@ -69,7 +69,12 @@ export default function Home() {
         {/* Stat Box  */}
         {/* Crypto pics */}
         <div className="mt-16 px-10">
-          <Image src="/crypto-group.png" height={600} width={600} />
+          <Image
+            src="/crypto-group.png"
+            alt="crypto coins"
+            height={600}
+            width={600}
+          />
         </div>
         {/* Crypto pics */}
         {/* Vector Pics */}
@@ -127,7 +132,7 @@ export default function Home() {
         Why we are different
       </h2>
       <p className="text-center text-[#4B5563] mt-2">
-        Our vision is to provide access to the world’s markets easier, faster
+        Our vision is to provide access to the world's markets easier, faster
         and at a lower cost than what exists in the market today.
       </p>
       {/* Institutional Investment */}
@@ -258,7 +263,12 @@ export default function Home() {
             </button>
           </div>
           <div>
-            <Image src="/Mockup-Phone.png" width={350} height={300} />
+            <Image
+              src="/Mockup-Phone.png"
+              width={350}
+              height={300}
+              alt="Mockup of a phone"
+            />
           </div>
         </div>
 
@@ -271,6 +281,7 @@ export default function Home() {
                 width={200}
                 height={200}
                 className="ml-auto"
+                alt="crypto coin"
               />
               <div>
                 <p className="text-[#D2D5DA]">01 —</p>
@@ -286,6 +297,7 @@ export default function Home() {
                 width={150}
                 height={200}
                 className="ml-auto"
+                alt="crypto coin"
               />
               <div>
                 <p className="text-[#D2D5DA]">02 —</p>
@@ -303,6 +315,7 @@ export default function Home() {
                 width={125}
                 height={100}
                 className="ml-auto"
+                alt="crypto coin"
               />
               <div>
                 <p className="text-[#D2D5DA]">03 —</p>
@@ -316,6 +329,7 @@ export default function Home() {
                 width={150}
                 height={200}
                 className="ml-auto"
+                alt="crypto coin"
               />
               <div>
                 <p className="text-[#D2D5DA]">04 —</p>
