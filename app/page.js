@@ -262,7 +262,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Types of Benefits */}
+        {/* Types of Benefits for the site */}
         <div className="w-[90%] mx-auto mt-10">
           <div className="flex justify-between gap-x-8">
             <div className="rounded-lg pl-10 pr-0 py-12 bg-[#1B1F28] w-[50%]">
