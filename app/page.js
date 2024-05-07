@@ -338,7 +338,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Types of Benefits */}
+        {/* Types of Benefits for the site */}
       </div>
       {/* Every Transactions */}
     </main>
