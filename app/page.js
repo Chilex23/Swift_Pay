@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import {
+  ArrowRightCircleIcon,
+  ChevronRightIcon,
+  ChevronLeftIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
-    <main className="pb-10">
+    <main className="pb-10 relative z-50">
       <div className="bg-[#14181F] text-white pb-16 relative">
         {/* Nav BAr */}
         <div className="flex px-20 py-5">
@@ -132,8 +137,8 @@ export default function Home() {
         Why we are different
       </h2>
       <p className="text-center text-[#4B5563] mt-2">
-        Our vision is to provide access to the world markets easier, faster
-        and at a lower cost than what exists in the market today.
+        Our vision is to provide access to the world markets easier, faster and
+        at a lower cost than what exists in the market today.
       </p>
       {/* Institutional Investment */}
       <div className="w-[90%] mx-auto rounded-lg bg-gradient-to-r from-[#BFD6FA] to-[#E8F0FC] mt-16 py-24 relative">
@@ -341,6 +346,200 @@ export default function Home() {
         {/* Types of Benefits for the site */}
       </div>
       {/* Every Transactions */}
+      {/* Reliable Opportunities */}
+      <div className="w-[95%] bg-gradient-to-r from-[#BFD6FA] to-[#E8F0FC] mt-16 mx-auto rounded-lg px-20 py-24 flex justify-between relative z-50">
+        <div className="w-[45%]">
+          <p className="text-4xl font-bold">
+            Reliability, Productive, Opportunities
+          </p>
+          <p className="text-lg mt-10 text-[#4B5563]">
+            At SwiftEarnPrime, we see investing differently. Today's financial
+            system is complex, exclusive and expensive - making it hard for the
+            typical person to start investing.
+          </p>
+          <p className="text-lg mt-6 text-[#4B5563]">
+            So, we're building a platform without digital walls and complex
+            barriers. A platform that empowers you to see new possibilities for
+            your money - and helps make them a reality.
+          </p>
+          <div className="text-[#2563EB] font-medium mt-12 flex gap-x-2 items-center">
+            <span>Learn More</span>
+            <ArrowRightCircleIcon className="w-6" />
+          </div>
+        </div>
+        <div>
+          <Image
+            src="/cover-photo.png"
+            width={400}
+            height={400}
+            alt="A man talking to a woman"
+            className="rounded-lg"
+          />
+        </div>
+        <Image
+          src="/Euro-Vector.png"
+          width={100}
+          height={100}
+          alt="Euro sign vector"
+          className="absolute bottom-0 right-[34rem]"
+        />
+        <Image
+          src="/Dollar-Vector.png"
+          width={50}
+          height={50}
+          alt="Dollar sign vector"
+          className="absolute top-0 left-[10rem]"
+        />
+      </div>
+      {/* Reliable Opportunities */}
+      <h2 className="text-4xl font-bold text-center mt-20">
+        Market Closed? Not Anymore
+      </h2>
+      <p className="text-[#4B5563] text-center text-lg mt-5">
+        Invest whenever you want, even when the traditional stock market is
+        closed.
+      </p>
+      <div className="w-full mt-16">
+        <Image
+          src="/Market-Chart.png"
+          width={1200}
+          height={400}
+          className="ml-16"
+          alt="market chart"
+        />
+      </div>
+      {/* News and Analysis */}
+      <h2 className="text-4xl font-bold mt-16 ml-16">News and Analysis</h2>
+      <div className="grid grid-cols-3 grid-rows-1 mx-16 mt-10 gap-x-8">
+        {/* Card 1 */}
+        <div>
+          <div>
+            <Image
+              src="/Candle-Chart.png"
+              width={400}
+              height={300}
+              alt="Candle Chart"
+              className="mb-3"
+            />
+          </div>
+          <p className="text-lg font-bold">
+            US-German yield spreads suggest higher Dollar Index
+          </p>
+          <p className="mt-5 text-sm">
+            It is reasonably well appreciated that the biggest comp-onent of the
+            dollar index DXY is the euro. Therefore when tryin…
+          </p>
+          <p className="text-[#6A6D78] text-sm mt-4">Updated 18 hours</p>
+        </div>
+        {/* Card 1 */}
+        {/* Card 2 */}
+        <div>
+          <div>
+            <Image
+              src="/Candle-Chart2.png"
+              width={400}
+              height={300}
+              alt="Candle Chart"
+              className="mb-3"
+            />
+          </div>
+          <p className="text-lg font-bold">
+            10 yr yield targets are being met into 4.70plus.
+          </p>
+          <p className="mt-5 text-sm">
+            Bonds are ready for a nice Short term rally be long TLT and do NOT
+            be short stocks
+          </p>
+          <p className="text-[#6A6D78] text-sm mt-4">Updated April 18</p>
+        </div>
+        {/* Card 2 */}
+        {/* Card 3 */}
+        <div>
+          <div>
+            <Image
+              src="/Candle-Chart3.png"
+              width={400}
+              height={300}
+              alt="Candle Chart"
+              className="mb-3"
+            />
+          </div>
+          <p className="text-lg font-bold">SPY: Week of April 15</p>
+          <p className="mt-5 text-sm">
+            Last week I just did a longer timeframe update. I am going to
+            continue with the larger timeframe as the focus but will also give
+            the shorter timeframe levels for next week. You…
+          </p>
+          <p className="text-[#6A6D78] text-sm mt-4">Updated 4 hours</p>
+        </div>
+        {/* Card 3 */}
+      </div>
+      {/* News and Analysis */}
+      {/* Users Carousel */}
+      <div className="carousel flex mt-10 w-[95%] mx-auto">
+        <div
+          id="slide1"
+          className="carousel-item relative w-full bg-[#06090E] text-white py-24 rounded-xl"
+        >
+          <div className="flex flex-col justify-center items-center w-full">
+            <p className="text-4xl font-bold">What do our customers Say?</p>
+            <div className="mt-8 w-[70%] shadow-xl">
+              <p className="text-[#E5E7EB] text-center">
+                This platform is amazing, really wish I have a lot more money I
+                would invest more. The customer support response is fast. would
+                recommend this platform to anybody.
+              </p>
+              <div className="flex mt-6 justify-center items-center gap-x-3 ">
+                <Image src="/avatar2.png" width={50} height={50} alt="avatar" />
+                <div>
+                  <p className="text-xs text-[#F3F4F6]">Thomas Green</p>
+                  <p className="text-xs text-[#F3F4F6]">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              <ChevronLeftIcon className="w-6" />
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              <ChevronRightIcon className="w-6" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          id="slide2"
+          className="carousel-item relative w-full bg-[#06090E] text-white py-24 rounded-xl"
+        >
+          <div className="flex flex-col justify-center items-center w-full">
+            <p className="text-4xl font-bold">What do our customers Say?</p>
+            <div className="mt-8 w-[70%] shadow-xl">
+              <p className="text-[#E5E7EB] text-center">
+                Last week I just did a longer timeframe update. I am going to
+                continue with the larger timeframe as the focus but will also
+                give the shorter timeframe levels for next week. You…
+              </p>
+              <div className="flex mt-6 justify-center items-center gap-x-3 ">
+                <Image src="/avatar2.png" width={50} height={50} alt="avatar" />
+                <div>
+                  <p className="text-xs text-[#F3F4F6]">Seth Meyers</p>
+                  <p className="text-xs text-[#F3F4F6]">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              <ChevronLeftIcon className="w-6" />
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              <ChevronRightIcon className="w-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* Users Carousel */}
     </main>
   );
 }
