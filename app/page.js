@@ -44,7 +44,7 @@ export default function Home() {
             earn cryptocurrencies
           </p>
           <button className="rounded-lg mt-4 px-6 py-4 text-white font-semibold bg-[#2467E3]">
-            Let's get started
+            Let us get started
           </button>
         </div>
         {/* Stat Box  */}
@@ -132,7 +132,7 @@ export default function Home() {
         Why we are different
       </h2>
       <p className="text-center text-[#4B5563] mt-2">
-        Our vision is to provide access to the world's markets easier, faster
+        Our vision is to provide access to the world markets easier, faster
         and at a lower cost than what exists in the market today.
       </p>
       {/* Institutional Investment */}
