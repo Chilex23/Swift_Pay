@@ -5,6 +5,11 @@ import {
   BanknotesIcon,
   PaperAirplaneIcon,
   LinkIcon,
+  ChevronDownIcon,
+  UserIcon,
+  BriefcaseIcon,
+  PhoneIcon,
+  ArrowLeftStartOnRectangleIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -20,17 +25,72 @@ export default function Page() {
             </span>
           </p>
         </div>
-        <div className="flex items-center gap-x-2">
-          <Image
-            src="/avatar.png"
-            width={50}
-            height={50}
-            className="rounded-full bg-[#EB963F]"
-            alt="Avatar profile"
-          />
-          <p className="text-sm font-medium">
-            <span>John Doe</span>
-          </p>
+        <div>
+          <details className="dropdown">
+            <summary className="m-1 btn border-none border-2 bg-white text-sm">
+              <div className="flex items-center gap-x-2">
+                <Image
+                  src="/avatar.png"
+                  width={50}
+                  height={50}
+                  className="rounded-full bg-[#EB963F]"
+                  alt="Avatar profile"
+                />
+                <p className="text-sm font-medium">
+                  <span>John Doe</span>
+                </p>
+              </div>
+              <ChevronDownIcon className="w-4 font-bold" />
+            </summary>
+            <ul className="py-2 px-0 mt-1 shadow-2xl menu dropdown-content z-[1] bg-base-100 rounded-box w-max right-0">
+              <li className="flex flex-row pb-2 px-2 border-b border-gray-200">
+                <Image
+                  src="/avatar.png"
+                  width={50}
+                  height={50}
+                  className="rounded-full bg-[#EB963F]"
+                  alt="Avatar"
+                />
+                <p className="font-medium">John Doe</p>
+                <div className="bg-[#FEF9C3] flex justify-center items-center p-1 rounded-2xl">
+                  <Image src="/gold-trophy.png" width={14} height={14} />
+                  <span className="text-xs font-medium">Gold Package</span>
+                </div>
+              </li>
+              <li className="flex flex-row gap-3 px-2 mt-3">
+                <Link href={"/dashboard/profile"} className="p-0 bg-white">
+                  <UserIcon className="w-6 font-bold p-0" />
+                  <p className="hidden md:block p-0">Profile Icon</p>
+                </Link>
+              </li>
+              <li className="flex flex-row gap-3 px-2 mt-3">
+                <BriefcaseIcon className="w-6 font-bold p-0" />
+                <p className="hidden md:block p-0">Trading Plan</p>
+              </li>
+              <li className="flex flex-row gap-3 px-2 mt-3">
+                <PhoneIcon className="w-6 font-bold p-0" />
+                <p className="hidden md:block p-0">Contact Suppport</p>
+              </li>
+              <li className="flex flex-row gap-4 px-3 mt-3">
+                <Image
+                  src="/gold-trophy.png"
+                  width={14}
+                  height={14}
+                  className="p-0"
+                />
+                <p className="hidden md:block p-0">My Plan</p>
+              </li>
+              <li className="flex flex-row gap-3 px-2 py-3 mt-3 border-t border-gray-200">
+                <ArrowLeftStartOnRectangleIcon
+                  color="#D9363E"
+                  className="w-6 font-bold p-0"
+                />
+                <p className="hidden md:block p-0 font-medium text-[#D9363E]">
+                  Log Out
+                </p>
+              </li>
+            </ul>
+          </details>
         </div>
       </div>
       {/* Header for username */}
@@ -98,14 +158,20 @@ export default function Page() {
       {/* At a glance header */}
       {/* Special Buttons */}
       <div className="py-2 flex items-center justify-center gap-8">
-        <Link href={"/deposit-funds"} className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all">
+        <Link
+          href={"/deposit-funds"}
+          className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all"
+        >
           <span>Deposit Fund</span>
           <PlusIcon className="w-6" />
         </Link>
-        <button className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
+        <Link
+          href={"/withdraw-funds"}
+          className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all"
+        >
           <span>Withdraw Funds</span>
           <BanknotesIcon className="w-6" />
-        </button>
+        </Link>
         <Link
           href={"/transfer-funds"}
           className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all"
