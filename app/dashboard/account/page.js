@@ -1,9 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
-  EyeIcon,
   PlusIcon,
+  EyeIcon,
   BanknotesIcon,
   PaperAirplaneIcon,
+  ChevronDownIcon,
+  UserIcon,
+  BriefcaseIcon,
+  PhoneIcon,
+  ArrowLeftStartOnRectangleIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -19,17 +25,76 @@ export default function Page() {
             </span>
           </p>
         </div>
-        <div className="flex items-center gap-x-2">
-          <Image
-            src="/avatar.png"
-            width={50}
-            height={50}
-            className="rounded-full bg-[#EB963F]"
-            alt="Avatar profile"
-          />
-          <p className="text-sm font-medium">
-            <span>John Doe</span>
-          </p>
+        <div>
+          <details className="dropdown">
+            <summary className="m-1 btn border-none border-2 bg-white text-sm">
+              <div className="flex items-center gap-x-2">
+                <Image
+                  src="/avatar.png"
+                  width={50}
+                  height={50}
+                  className="rounded-full bg-[#EB963F]"
+                  alt="Avatar profile"
+                />
+                <p className="text-sm font-medium">
+                  <span>John Doe</span>
+                </p>
+              </div>
+              <ChevronDownIcon className="w-4 font-bold" />
+            </summary>
+            <ul className="py-2 px-0 mt-1 shadow-2xl menu dropdown-content z-[1] bg-base-100 rounded-box w-max right-0">
+              <li className="flex flex-row pb-2 px-2 border-b border-gray-200">
+                <Image
+                  src="/avatar.png"
+                  width={50}
+                  height={50}
+                  className="rounded-full bg-[#EB963F]"
+                  alt="Avatar"
+                />
+                <p className="font-medium">John Doe</p>
+                <div className="bg-[#FEF9C3] flex justify-center items-center p-1 rounded-2xl">
+                  <Image src="/gold-trophy.png" width={14} height={14} />
+                  <span className="text-xs font-medium">Gold Package</span>
+                </div>
+              </li>
+              <li className="flex flex-row gap-3 px-2 mt-3">
+                <Link href={"/dashboard/profile"} className="p-3 pl-1 bg-white">
+                  <UserIcon className="w-6 font-bold p-0" />
+                  <p className="hidden md:block p-0">Profile Icon</p>
+                </Link>
+              </li>
+              <li className="flex flex-row gap-3 px-2 mt-3">
+                <Link href={"/dashboard/trading-plan"} className="p-3 pl-1 bg-white">
+                  <BriefcaseIcon className="w-6 font-bold p-0" />
+                  <p className="hidden md:block p-0">Trading Plan</p>
+                </Link>
+              </li>
+              <li className="flex flex-row gap-3 p-3 mt-3">
+                <PhoneIcon className="w-6 font-bold p-0" />
+                <p className="hidden md:block p-0">Contact Suppport</p>
+              </li>
+              <li className="flex flex-row gap-4 px-3 mt-3">
+                <Link href={"/dashboard/my-plan"} className="p-3 pl-1 bg-white">
+                  <Image
+                    src="/gold-trophy.png"
+                    width={14}
+                    height={14}
+                    className="p-0"
+                  />
+                  <p className="hidden md:block p-0">My Plan</p>
+                </Link>
+              </li>
+              <li className="flex flex-row gap-3 px-2 py-3 mt-3 border-t border-gray-200">
+                <ArrowLeftStartOnRectangleIcon
+                  color="#D9363E"
+                  className="w-6 font-bold p-0"
+                />
+                <p className="hidden md:block p-0 font-medium text-[#D9363E]">
+                  Log Out
+                </p>
+              </li>
+            </ul>
+          </details>
         </div>
       </div>
       {/* Header for username */}

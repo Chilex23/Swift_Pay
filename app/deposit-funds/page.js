@@ -9,7 +9,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 export default function Page() {
   const [step, setStep] = useState(1);
   return (
-    <div className="h-screen bg-gray-50">
+    <div className="h-screen bg-[#F9FAFB]">
       {/* HEader */}
       <div className="px-10 py-4 border-b-2 bg-white border-gray-300 flex justify-between">
         <Link href={"/dashboard"} className="flex gap-x-4 text-black md:w-40">

@@ -9,9 +9,9 @@ import WithdrawFundsForm from "../ui/dashboard/withdrawFundsForm";
 export default function Page() {
   const [step, setStep] = useState(1);
   return (
-    <div className="pb-8 bg-gray-50 min-h-screen">
+    <div className="pb-8 bg-[#F9FAFB] min-h-screen">
       {/* HEader */}
-      <div className="px-10 py-4 border-b-2 border-gray-300 flex justify-between">
+      <div className="px-10 py-4 border-b-2 border-gray-300 flex justify-between bg-white">
         <Link href={"/dashboard"} className="flex gap-x-4 text-black md:w-40">
           <ArrowLeftIcon className="w-6" />
           <div className="flex items-center gap-x-2">

@@ -29,10 +29,13 @@ export default function SideNav() {
             <PhoneIcon className="w-6" />
             <div className="hidden md:block">Support</div>
           </button>
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
-            <GiftIcon className="w-6" />
-            <div className="hidden md:block">Referral</div>
-          </button>
+          <Link href={"/dashboard/referral"} className="mb-2">
+            <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+              <GiftIcon className="w-6" />
+              <div className="hidden md:block">Referral</div>
+            </button>
+          </Link>
+
           {/* Bottom */}
           <div className="rounded-md h-fit bg-[#111827] text-white relative">
             <div className="mt-4 mx-4">

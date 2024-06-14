@@ -1,25 +1,19 @@
-"use client";
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 import {
   ChevronDownIcon,
   UserIcon,
   BriefcaseIcon,
+  LinkIcon,
   PhoneIcon,
   ArrowLeftStartOnRectangleIcon,
+  CheckIcon,
+  WalletIcon,
 } from "@heroicons/react/24/outline";
-import AddAccount from "@/app/ui/dashboard/settings/add-accout";
-import Security from "@/app/ui/dashboard/settings/security";
-import Notifications from "@/app/ui/dashboard/settings/notifications";
-import clsx from "clsx";
 
 export default function Page() {
-  const [accountDetails, setAccountDetails] = useState("Bank Account");
-  const [tab, setTab] = useState("withdrawal");
-  console.log(tab);
   return (
-    <>
+    <div>
       {/* Header for username */}
       <div className="flex items-center justify-between mb-12">
         <div>
@@ -69,10 +63,7 @@ export default function Page() {
                 </Link>
               </li>
               <li className="flex flex-row gap-3 px-2 mt-3">
-                <Link
-                  href={"/dashboard/trading-plan"}
-                  className="p-3 pl-1 bg-white"
-                >
+                <Link href={"/dashboard/trading-plan"} className="p-3 pl-1 bg-white">
                   <BriefcaseIcon className="w-6 font-bold p-0" />
                   <p className="hidden md:block p-0">Trading Plan</p>
                 </Link>
@@ -107,63 +98,73 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-2xl font-semibold">Account Settings</h2>
+      <h2 className="text-3xl font-semibold">Current Plan</h2>
       {/* Header */}
-      {/* Tabs */}
-      <div role="tablist" className="tabs tabs-boxed my-8 w-fit font-semibold">
-        <a
-          role="tab"
-          className={clsx("tab", {
-            "bg-white": tab === "withdrawal",
-            "text-black": tab === "withdrawal",
-            "text-[#4B5563]": tab !== "withdrawal",
-          })}
-          onClick={() => {
-            setTab("withdrawal");
-          }}
-        >
-          Withdrawal Accounts
-        </a>
-        <a
-          role="tab"
-          className={clsx("tab", {
-            "bg-white": tab === "security",
-            "text-black": tab === "security",
-            "text-[#4B5563]": tab !== "security",
-          })}
-          onClick={() => {
-            setTab("security");
-          }}
-        >
-          Security
-        </a>
-        <a
-          role="tab"
-          className={clsx("tab", {
-            "bg-white": tab === "notifications",
-            "text-black": tab === "notifications",
-            "text-[#4B5563]": tab !== "notifications",
-          })}
-          onClick={() => {
-            setTab("notifications");
-          }}
-        >
-          Notifications
-        </a>
+      {/* Banner */}
+      <div className="p-8 bg-[#111827] text-white mt-8 rounded-xl">
+        <div className="flex justify-between w-4/5">
+          <div>
+            <p className="font-medium text-sm">Trading Plan</p>
+            <div className="flex gap-2 mt-4">
+              <p className="text-2xl font-semibold">Bronze Package</p>
+              <Image src="/gold-trophy.png" width={23} height={23} />
+            </div>
+
+            <div className="flex mt-24 gap-16">
+              <div>
+                <p className="text-sm text-[#F3F4F6]">Status</p>
+                <p className="font-medium">Ongoing</p>
+              </div>
+              <div>
+                <p className="text-sm text-[#F3F4F6]">Price</p>
+                <p className="font-medium">$9,999</p>
+              </div>
+              <div>
+                <p className="text-sm text-[#F3F4F6]">Plan Ends</p>
+                <p className="font-medium">July 24, 2024</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Container2 */}
+          <div>
+            <p className="font-medium">Included Plan</p>
+            <div className="my-6 flex flex-col gap-4">
+              <div className="flex items-center gap-3">
+                <CheckIcon className="w-6" />
+                <p className="font-medium">20+ assets/products</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckIcon className="w-6" />
+                <p className="font-medium">24/7 Support</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckIcon className="w-6" />
+                <p className="font-medium">Risk Management</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckIcon className="w-6" />
+                <p className="font-medium">Free Signal</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckIcon className="w-6" />
+                <p className="font-medium">Unlimited Support</p>
+              </div>
+            </div>
+          </div>
+          {/* Container2 */}
+        </div>
+
+        <div className="mt-6">
+          <button className="btn mt-4 mr-5 w-fit text-white px-8 font-semibold bg-[#1F2937] border-none">
+            Cancel Package
+          </button>
+          <button className="btn mt-4 w-fit text-white px-16 font-semibold bg-[#6366F1] border-none">
+            Change Plan
+          </button>
+        </div>
       </div>
-      {/* Tabs */}
-      {tab !== "withdrawal" ? (
-        tab === "security" ? (
-          <Security />
-        ) : (
-          <Notifications />
-        )
-      ) : (
-        <AddAccount
-          setAccountDetails={setAccountDetails}
-          accountDetails={accountDetails}
-        />
-      )}
-    </>
+      {/* Banner */}
+    </div>
   );
 }

@@ -58,27 +58,31 @@ export default function Page() {
                 </div>
               </li>
               <li className="flex flex-row gap-3 px-2 mt-3">
-                <Link href={"/dashboard/profile"} className="p-0 bg-white">
+                <Link href={"/dashboard/profile"} className="p-3 pl-1 bg-white">
                   <UserIcon className="w-6 font-bold p-0" />
                   <p className="hidden md:block p-0">Profile Icon</p>
                 </Link>
               </li>
               <li className="flex flex-row gap-3 px-2 mt-3">
-                <BriefcaseIcon className="w-6 font-bold p-0" />
-                <p className="hidden md:block p-0">Trading Plan</p>
+                <Link href={"/dashboard/trading-plan"} className="p-3 pl-1 bg-white">
+                  <BriefcaseIcon className="w-6 font-bold p-0" />
+                  <p className="hidden md:block p-0">Trading Plan</p>
+                </Link>
               </li>
-              <li className="flex flex-row gap-3 px-2 mt-3">
+              <li className="flex flex-row gap-3 p-3 mt-3">
                 <PhoneIcon className="w-6 font-bold p-0" />
                 <p className="hidden md:block p-0">Contact Suppport</p>
               </li>
               <li className="flex flex-row gap-4 px-3 mt-3">
-                <Image
-                  src="/gold-trophy.png"
-                  width={14}
-                  height={14}
-                  className="p-0"
-                />
-                <p className="hidden md:block p-0">My Plan</p>
+                <Link href={"/dashboard/my-plan"} className="p-3 pl-1 bg-white">
+                  <Image
+                    src="/gold-trophy.png"
+                    width={14}
+                    height={14}
+                    className="p-0"
+                  />
+                  <p className="hidden md:block p-0">My Plan</p>
+                </Link>
               </li>
               <li className="flex flex-row gap-3 px-2 py-3 mt-3 border-t border-gray-200">
                 <ArrowLeftStartOnRectangleIcon
