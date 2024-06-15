@@ -34,16 +34,15 @@ export default function Home() {
               <p className="text-lg md:text-2xl font-semibold">$20,000.35</p>
             </div>
             <div className="w-[5rem] md:w-32">
-            <Image
-              src="/Line_Chart(Joe-Flores).png"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-              alt="Line Chart"
-            />
+              <Image
+                src="/Line_Chart(Joe-Flores).png"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+                alt="Line Chart"
+              />
             </div>
-            
           </div>
           <p className="text-sm mt-2 flex items-center">
             <Image src="/Approx-Icon.png" width={30} height={30} />
@@ -102,7 +101,9 @@ export default function Home() {
         </div>
         <div>
           <p className="text-lg md:text-2xl font-bold">500+</p>
-          <p className="text-base md:text-lg text-[#4B5563]">Professional Team</p>
+          <p className="text-base md:text-lg text-[#4B5563]">
+            Professional Team
+          </p>
         </div>
         <div>
           <p className="text-lg md:text-2xl font-bold">2.8k</p>
@@ -354,9 +355,9 @@ export default function Home() {
           <Image
             src="/cover-photo.png"
             width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }}
             alt="A man talking to a woman"
             className="rounded-lg"
           />
@@ -395,7 +396,9 @@ export default function Home() {
         />
       </div>
       {/* News and Analysis */}
-      <h2 className="text-4xl font-bold mt-16 md:-16 w-fit mx-auto">News and Analysis</h2>
+      <h2 className="text-4xl font-bold mt-16 md:-16 w-fit mx-auto">
+        News and Analysis
+      </h2>
       <div className="grid md:grid-cols-3 grid-rows-1 mx-16 mt-10 gap-x-8">
         {/* Card 1 */}
         <div>
@@ -468,7 +471,9 @@ export default function Home() {
           className="carousel-item relative w-full bg-[#06090E] text-white py-10 md:py-24 rounded-xl"
         >
           <div className="flex flex-col justify-center items-center w-full">
-            <p className="text-4xl font-bold text-center">What do our customers Say?</p>
+            <p className="text-4xl font-bold text-center">
+              What do our customers Say?
+            </p>
             <div className="mt-8 w-[60%] md:w-[70%] shadow-xl">
               <p className="text-[#E5E7EB] text-sm md:text-base text-center">
                 This platform is amazing, really wish I have a lot more money I
@@ -499,7 +504,9 @@ export default function Home() {
           className="carousel-item relative w-full bg-[#06090E] text-white py-10 md:py-24 rounded-xl"
         >
           <div className="flex flex-col justify-center items-center w-full">
-            <p className="text-4xl font-bold text-center">What do our customers Say?</p>
+            <p className="text-4xl font-bold text-center">
+              What do our customers Say?
+            </p>
             <div className="mt-8 w-[60%] md:w-[70%] shadow-xl">
               <p className="text-[#E5E7EB] text-sm md:text-base text-center">
                 Last week I just did a longer timeframe update. I am going to
