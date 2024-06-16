@@ -11,9 +11,9 @@ export default function Page() {
       <NavBar />
       {/* Nav BAr */}
       {/* HeaderTitle */}
-      <div className="pt-16 px-2 mt-16 mb-24 w-full lg:mt-24 lg:w-[50rem] mx-auto">
+      <div className="pt-16 px-2 md:px-0 lg:pt-0 mt-16 mb-24 w-full lg:mt-24 lg:w-[50rem] mx-auto">
         <p className="uppercase text-[#9CA3AF] text-center">Plans</p>
-        <p className="text-3xl lg:text-[3.2rem] font-bold text-center mt-8">
+        <p className="text-3xl lg:text-[3.2rem] font-bold text-center mt-8 lg:leading-[4rem]">
           Investing now ? Plans Accessible to everyone
         </p>
 
