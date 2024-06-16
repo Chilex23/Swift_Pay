@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Security() {
   return (
-    <div className="flex gap-x-3 items-center w-2/3 justify-between">
+    <div className="flex flex-col gap-3 items-center w-[75%] md:w-2/3 justify-between">
       <div className="flex gap-x-3 items-center">
         <Image src="/security-keys.png" width={45} height={45} />
         <div>

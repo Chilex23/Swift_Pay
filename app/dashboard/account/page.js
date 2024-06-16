@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -64,7 +64,10 @@ export default function Page() {
                 </Link>
               </li>
               <li className="flex flex-row gap-3 px-2 mt-3">
-                <Link href={"/dashboard/trading-plan"} className="p-3 pl-1 bg-white">
+                <Link
+                  href={"/dashboard/trading-plan"}
+                  className="p-3 pl-1 bg-white"
+                >
                   <BriefcaseIcon className="w-6 font-bold p-0" />
                   <p className="hidden md:block p-0">Trading Plan</p>
                 </Link>
@@ -99,10 +102,10 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-3xl font-semibold">My Account</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-[5rem] md:mt-0">My Account</h2>
       {/* Header */}
       {/* Account Banner */}
-      <div className="bg-[#111827] rounded-md mt-10 text-white py-10 px-8 relative">
+      <div className="bg-[#111827] h-[16rem] md:h-auto rounded-md mt-10 text-white py-10 px-8 relative">
         <Image
           src="/Ellipse-1.png"
           width={10}
@@ -146,12 +149,12 @@ export default function Page() {
           </span>
         </p>
         {/* Account Balance */}
-        <div className="mt-8 flex justify-center items-center gap-x-10">
+        <div className="mt-8 flex md:justify-center items-center relative z-30 gap-x-10">
           <div className="border-r-2 border-gray-300 pr-12">
             <p className="text-sm font-medium">Account USD Balance</p>
             <p className="text-3xl font-semibold">$10,000.35</p>
           </div>
-          <div>
+          <div className="hidden md:block">
             <p className="text-sm font-medium">Equivalent BTC balance</p>
             <p className="text-3xl font-semibold flex items-center gap-x-3">
               10 BTC <span className="text-[#4ADE80] text-sm">+12.78%</span>{" "}
@@ -161,28 +164,39 @@ export default function Page() {
         </div>
         {/* Account Balance */}
         {/* Special Buttons */}
-        <div className="py-2 flex items-center justify-center gap-8 mt-8">
-          <button className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all">
+        <div className="py-2 hidden md:flex items-center justify-center gap-8 mt-8">
+          <Link
+            href={"/deposit-funds"}
+            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
+          >
             <span>Deposit Fund</span>
             <PlusIcon className="w-6" />
-          </button>
-          <button className="flex items-center gap-x-2 bg-white border-black border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
+          </Link>
+          <Link
+            href={"/withdraw-funds"}
+            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black bg-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
+          >
             <span>Withdraw Funds</span>
             <BanknotesIcon className="w-6" />
-          </button>
-          <button className="flex items-center gap-x-2 bg-white border-black border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all">
+          </Link>
+          <Link
+            href={"/transfer-funds"}
+            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black bg-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
+          >
             <span>Transfer Funds</span>
             <PaperAirplaneIcon className="w-6" />
-          </button>
+          </Link>
         </div>
         {/* Special Buttons */}
       </div>
       {/* Account Banner */}
       {/* Recent Transactions */}
       <div className="mt-14 flex justify-between">
-        <h2 className="text-2xl font-semibold">Recent Transactions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold">
+          Recent Transactions
+        </h2>
         <button
-          className="text-sm text-[#2563EB] underline
+          className="text-sm font-medium text-[#2563EB] underline
 "
         >
           See All Transactions

@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <div>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -98,12 +98,12 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-3xl font-semibold">Trading Plans</h2>
+      <h2 className="text-3xl font-semibold mt-[5rem] md:mt-0">Trading Plans</h2>
       <p className="text-[#4B5563] text-sm">Get started with your investment</p>
       {/* Header */}
       {/* Cards */}
-      <div className="mt-10 grid grid-cols-3 gap-y-10">
-        <div className="p-6 w-[20rem] bg-[#F3F4F6] rounded-xl">
+      <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-10">
+        <div className="p-6 md:w-[20rem] bg-[#F3F4F6] rounded-xl">
           <div className="flex gap-4">
             <p className="text-[#374151]">Bronze Package</p>
             <Image src="/gold-trophy.png" width={14} height={14} />
@@ -155,7 +155,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="p-6 w-[20rem] bg-[#F3F4F6] rounded-xl">
+        <div className="p-6 md:w-[20rem] bg-[#F3F4F6] rounded-xl">
           <div className="flex gap-4">
             <p className="text-[#374151]">Silver Package</p>
             <Image src="/gold-trophy.png" width={14} height={14} />
@@ -205,7 +205,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="p-6 w-[20rem] bg-[#F3F4F6] rounded-xl">
+        <div className="p-6 md:w-[20rem] bg-[#F3F4F6] rounded-xl">
           <div className="flex gap-4">
             <p className="text-[#374151]">Gold Package</p>
             <Image src="/gold-trophy.png" width={14} height={14} />
@@ -255,7 +255,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="p-6 w-[20rem] bg-[#F3F4F6] rounded-xl">
+        <div className="p-6 md:w-[20rem] bg-[#F3F4F6] rounded-xl">
           <div className="flex gap-4">
             <p className="text-[#374151]">Diamond Package</p>
             <Image src="/gold-trophy.png" width={14} height={14} />

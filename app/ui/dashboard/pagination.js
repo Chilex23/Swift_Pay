@@ -22,7 +22,7 @@ export default function Pagination({ totalPages }) {
 
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row gap-y-6 items-center md:justify-between">
         {/* <PaginationArrow
           direction="left"
           href={createPageURL(currentPage - 1)}

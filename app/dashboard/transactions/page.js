@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -99,11 +99,13 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="text-2xl font-semibold">Account Transactions</h2>
+      <div className="flex items-center justify-between mb-5 mt-[5rem] md:mt-0">
+        <h2 className="text-xl md:text-2xl font-semibold">
+          <span className="hidden md:block">Account</span> Transactions
+        </h2>
         <div>
           <details className="dropdown">
-            <summary className="m-1 btn border-[#E5E7EB] border-2 bg-white text-sm">
+            <summary className="m-1 btn p-1 border-[#E5E7EB] border-2 bg-white text-sm">
               <span>All Transactions</span>
               <ChevronDownIcon className="w-4 font-bold" />
             </summary>
@@ -240,7 +242,7 @@ export default function Page() {
         </tbody>
       </table>
       {/* Table for recent transactions */}
-      <div className="mt-12 w-full">
+      <div className="mt-16 w-full">
         <Pagination totalPages={8} />
       </div>
     </>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Notifications() {
   return (
     <>
-      <div className="flex gap-x-3 items-center w-2/3 justify-between">
+      <div className="flex gap-x-3 items-center w-[90%] md:w-2/3 justify-between">
         <div className="flex gap-x-3 items-center">
           <div>
             <p className="font-medium">Profit Alert</p>
@@ -19,7 +19,8 @@ export default function Notifications() {
           checked
         />
       </div>
-      <div className="flex gap-x-3 items-center w-2/3 justify-between mt-10">
+
+      <div className="flex gap-x-3 items-center w-[90%] md:w-2/3 justify-between mt-10">
         <div className="flex gap-x-3 items-center">
           <div>
             <p className="font-medium">Investment Plan Alert</p>
@@ -35,7 +36,8 @@ export default function Notifications() {
           checked
         />
       </div>
-      <div className="flex gap-x-3 items-center w-2/3 justify-between mt-10">
+
+      <div className="flex gap-x-3 items-center w-[90%] md:w-2/3 justify-between mt-10">
         <div className="flex gap-x-3 items-center">
           <div>
             <p className="font-medium">News and Offers Alert</p>

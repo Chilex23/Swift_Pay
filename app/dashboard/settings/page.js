@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -107,7 +107,7 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-2xl font-semibold">Account Settings</h2>
+      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">Account Settings</h2>
       {/* Header */}
       {/* Tabs */}
       <div role="tablist" className="tabs tabs-boxed my-8 w-fit font-semibold">
@@ -122,7 +122,7 @@ export default function Page() {
             setTab("withdrawal");
           }}
         >
-          Withdrawal Accounts
+          Withdrawal
         </a>
         <a
           role="tab"

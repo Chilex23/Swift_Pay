@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -100,12 +100,12 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-2xl font-semibold">Profit History</h2>
+      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">Profit History</h2>
       {/* Header */}
       {/* At a glance header */}
-      <div className="border-t-2 border-b-2 border-gray-300 mt-7 flex justify-between py-5">
+      <div className="border-t-2 border-b-2 border-gray-300 mt-7 flex flex-col md:flex-row gap-y-6 justify-between py-5">
         {/* Glance 1 */}
-        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
+        <div className=" md:border-r-gray-300  md:border-r-2 md:border-t-0 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium text-sm">Total Investment</p>
@@ -124,7 +124,7 @@ export default function Page() {
         </div>
         {/* Glance 1 */}
         {/* Glance 2 */}
-        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
+        <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium text-sm">Earned Profit</p>
@@ -136,7 +136,7 @@ export default function Page() {
         </div>
         {/* Glance 2 */}
         {/* Glance 3 */}
-        <div className="px-4 pt-4">
+        <div className="px-4 pt-4 border-t-gray-300 border-t-2  md:border-t-0">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium text-sm">Expected Profit</p>

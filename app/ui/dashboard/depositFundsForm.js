@@ -1,13 +1,13 @@
 const DepositFundsForm = ({ setStepFunc = () => {} }) => {
   return (
-    <div className="w-1/3 px-6 py-3 mx-auto mt-10">
+    <div className="md:w-1/3 px-6 py-3 mx-auto mt-10">
       <h2 className="text-2xl font-semibold text-center">
         Fund your account via crypto
       </h2>
       <p className="text-[#667085] text-sm text-center">
         Top up your account balance
       </p>
-      <div className="bg-white px-5 py-3 mt-2 rounded-2xl">
+      <div className="bg-white md:px-5 py-3 mt-2 rounded-2xl">
         <div className="w-full border-2 border-[#E5E7EB] mt-6 flex justify-between items-center h-12 px-4 py-3 rounded-md text-sm bg-[#E5E7EB] mb-5">
           <p>Available Balance</p>
           <p>

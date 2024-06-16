@@ -1,11 +1,11 @@
 const WithdrawFundsForm = ({ setStepFunc = () => {} }) => {
   return (
-    <div className="w-1/3 px-6 py-3 mx-auto mt-10">
+    <div className="lg:w-1/3 px-6 py-3 mx-auto mt-10">
       <h2 className="text-2xl font-semibold text-center">Withdraw Funds</h2>
       <p className="text-[#667085] text-sm mt-3 text-center">
         Enter required recipients information
       </p>
-      <div className="bg-white px-6 py-3 mt-5 rounded-2xl">
+      <div className="bg-white md:px-6 py-3 mt-5 rounded-2xl">
         <div className="w-full border-2 border-[#E5E7EB] mt-6 flex justify-between items-center h-12 px-4 py-3 rounded-md text-sm bg-[#E5E7EB] mb-5">
           <p>Available Balance</p>
           <p>

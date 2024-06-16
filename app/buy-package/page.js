@@ -28,8 +28,8 @@ export default function Page() {
         </Link>
       </div>
       {/* HEader */}
-      <div className="flex gap-10 justify-center mt-16">
-        <div className="p-6 bg-white rounded-xl w-[28rem]">
+      <div className="flex flex-col md:flex-row gap-10 justify-center mt-16">
+        <div className="p-6 bg-white rounded-xl md:w-[28rem]">
           {/* Banner */}
           <div className="flex justify-between py-6 px-3 gap-4 bg-[#11141A] rounded-xl text-white">
             <div className="flex items-center gap-2">

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="h-screen flex">
-      <div className="bg-[#14181F] text-white w-[40rem] h-full px-10 relative">
+      <div className="bg-[#14181F] text-white w-[40rem] h-full px-10 relative hidden md:block">
         <Link
           className="mb-2 flex h-20 items-end justify-start rounded-md p-4 md:h-20"
           href="/"

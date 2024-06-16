@@ -3,7 +3,6 @@ import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { NavBarContext } from "./navBar.provider";
-// import NavProvider from "./navBar.provider";
 
 const SideBarNav = () => {
   const { sideBarHidden, toggleSideBarHidden } = useContext(NavBarContext);
@@ -44,13 +43,5 @@ const SideBarNav = () => {
     </motion.div>
   );
 };
-
-// function Sidebar() {
-//   return (
-//     <NavProvider>
-//       <SideBarNav />
-//     </NavProvider>
-//   );
-// }
 
 export default SideBarNav;

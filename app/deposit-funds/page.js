@@ -9,7 +9,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 export default function Page() {
   const [step, setStep] = useState(1);
   return (
-    <div className="h-screen bg-[#F9FAFB]">
+    <div className="min-h-screen bg-[#F9FAFB]">
       {/* HEader */}
       <div className="px-10 py-4 border-b-2 bg-white border-gray-300 flex justify-between">
         <Link href={"/dashboard"} className="flex gap-x-4 text-black md:w-40">
@@ -34,7 +34,7 @@ export default function Page() {
       </div>
       {/* HEader */}
       {/* STEPS */}
-      <div className="mt-6 flex gap-10 w-fit mx-auto">
+      <div className="mt-6 flex gap-3 md:gap-10 w-fit mx-auto">
         <div className="flex gap-2 items-center">
           <div
             className={clsx(
@@ -67,7 +67,7 @@ export default function Page() {
       {step === 1 ? (
         <DepositFundsForm setStepFunc={setStep} />
       ) : (
-        <div className="px-6 py-10 mt-5 w-fit mx-auto rounded-2xl">
+        <div className="px-6 py-10 mt-5 md:w-fit mx-auto rounded-2xl">
           <div className="mb-5">
             <p className="font-semibold text-center text-2xl">
               Confirm Payment
@@ -88,9 +88,9 @@ export default function Page() {
                 <label id="bank" className="text-sm font-medium">
                   Solana Address
                 </label>
-                <div className="flex gap-4">
-                  <p className="w-full block rounded-md border border-dashed border-gray-200 py-3 px-2 outline-2">
-                    3ijNSWC1bWX7dT2cWHrk5ywFPSRRDTgRgEunLRLkSn8w
+                <div className="flex flex-col gap-4">
+                  <p className="w-full text-clip block rounded-md border border-dashed border-gray-200 py-3 px-2 outline-2">
+                    3ijNSWC1bWX7dT2cW7dT2c
                   </p>
                   <div>
                     <p className="text-sm font-medium text-[#6366F1]">

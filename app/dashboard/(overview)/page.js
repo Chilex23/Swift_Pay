@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -98,11 +98,11 @@ export default function Page() {
         </div>
       </div>
       {/* Header for username */}
-      <h2 className="text-2xl font-semibold">Account Summary</h2>
+      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">Account Summary</h2>
       {/* At a glance header */}
-      <div className="border-t-2 border-t-gray-300 mt-5 flex justify-between py-5">
+      <div className="md:border-t-2 md:border-t-gray-300 mt-5 flex flex-col md:flex-row gap-y-10 justify-between py-5">
         {/* Glance 1 */}
-        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
+        <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Account Balance</p>
@@ -121,7 +121,7 @@ export default function Page() {
         </div>
         {/* Glance 1 */}
         {/* Glance 2 */}
-        <div className="border-r-gray-300 border-r-2 px-4 pt-4">
+        <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Total Profit</p>
@@ -140,7 +140,7 @@ export default function Page() {
         </div>
         {/* Glance 2 */}
         {/* Glance 3 */}
-        <div className="px-4 pt-4">
+        <div className="px-4 pt-4 border-t-gray-300 border-t-2 md:border-t-0">
           <div className="flex gap-x-10">
             <div>
               <p className="font-medium">Total Profit</p>
@@ -161,24 +161,24 @@ export default function Page() {
       </div>
       {/* At a glance header */}
       {/* Special Buttons */}
-      <div className="py-2 flex items-center justify-center gap-8">
+      <div className="py-2 flex my-10 lg:my-2 items-center justify-center gap-8">
         <Link
           href={"/deposit-funds"}
-          className="flex items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white text-sm hover:shadow-lg hover:scale-105 transition-all"
+          className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
           <span>Deposit Fund</span>
           <PlusIcon className="w-6" />
         </Link>
         <Link
           href={"/withdraw-funds"}
-          className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all"
+          className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
           <span>Withdraw Funds</span>
           <BanknotesIcon className="w-6" />
         </Link>
         <Link
           href={"/transfer-funds"}
-          className="flex items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black text-sm hover:shadow-lg hover:scale-105 transition-all"
+          className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
           <span>Transfer Funds</span>
           <PaperAirplaneIcon className="w-6" />
@@ -186,7 +186,7 @@ export default function Page() {
       </div>
       {/* Special Buttons */}
       {/* Total Amount */}
-      <div className="py-4 mt-6 flex gap-x-12">
+      <div className="py-4 mt-6 flex flex-col gap-y-8 md:flex-row gap-x-12">
         {/* Total 1 */}
         <div className="flex items-center gap-x-3">
           <Image src="/profit.png" width={25} height={25} alt="Money" />
@@ -225,12 +225,12 @@ export default function Page() {
       {/* Total Amount */}
       {/* Recent Transactions */}
       <div className="mt-14 flex justify-between">
-        <h2 className="text-2xl font-semibold">Recent Transactions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold">Recent Transactions</h2>
         <button
-          className="text-sm text-[#2563EB] underline
+          className="text-sm font-medium text-[#2563EB] underline
 "
         >
-          See All Transactions
+          See All
         </button>
       </div>
       {/* Recent Transactions */}
@@ -308,27 +308,27 @@ export default function Page() {
       </table>
       {/* Table for recent transactions */}
       {/* Bottom Wrapper */}
-      <div className="bg-[#111827] text-white mt-16 rounded-xl p-10 flex justify-between items-center gap-x-5">
-        <div className="w-2/4">
+      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-6 md:p-10 flex justify-between items-center md:gap-x-5">
+        <div className="w-full md::w-2/4">
           <p className="text-3xl font-semibold">Refer a friend and earn $5</p>
           <p className="font-normal leading-6s text-gray-100 mt-4">
             Share your referral code and get $5 when your refer signs up and
             make transactions of over $500
           </p>
-          <div className="flex gap-x-4 mt-10">
+          <div className="flex flex-col md:flex-row gap-4 mt-10">
             <input
               name="referral_link"
               type="text"
               placeholder="Enter the referral link here"
-              className="block rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-[#4B5563]"
+              className="block rounded-md border border-gray-200 py-2 pl-4 h-12 text-sm outline-2 placeholder:text-[#4B5563]"
             />
-            <button className="flex items-center gap-x-1 bg-[#6366F1] py-2 px-4 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
+            <button className="flex items-center justify-center gap-x-1 bg-[#6366F1] py-3 md:py-2 md:px-4 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
               <LinkIcon className="w-6" />
               <span>Copy Link</span>
             </button>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Image
             src="/wallet.png"
             width={200}

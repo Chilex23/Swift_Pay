@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -98,7 +98,7 @@ export default function Page() {
         </div>
       </div>
       {/* Header for username */}
-      <h1 className="text-2xl font-semibold">Profile Info</h1>
+      <h1 className="text-2xl font-semibold mt-[5rem] md:mt-0">Profile Info</h1>
       {/* Title */}
       <div className="flex gap-3 mt-6">
         <div className="avatar placeholder">
@@ -122,22 +122,22 @@ export default function Page() {
       {/* Title */}
       {/* Box */}
       <div className="border-2 border-[#E5E7EB] bg-[#F9FAFB] rounded-xl mt-6 p-6">
-        <div className="grid grid-cols-2 gap-12">
-          <div>
+        <div className="grid md:grid-cols-2 gap-5 md:gap-12">
+          <div className="flex md:flex-col items-center md:items-start justify-between">
             <p className="text-sm text-[#6D7280]">Full Name</p>
             <p className="font-medium text-[#2F313F]">Ghost Doe</p>
           </div>
-          <div>
+          <div className="flex md:flex-col items-center md:items-start justify-between">
             <p className="text-sm text-[#6D7280]">Email Address</p>
             <p className="font-medium text-[#2F313F]">Phantom87@gmail.com</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-12 mt-6">
-          <div>
+        <div className="grid md:grid-cols-2 gap-5 md:gap-12 mt-5 md:mt-6">
+          <div className="flex md:flex-col items-center md:items-start justify-between">
             <p className="text-sm text-[#6D7280]">UserName</p>
             <p className="font-medium text-[#2F313F]">Dosghost69</p>
           </div>
-          <div>
+          <div className="flex md:flex-col items-center md:items-start justify-between">
             <p className="text-sm text-[#6D7280]">Phone Number</p>
             <p className="font-medium text-[#2F313F]">09033748534</p>
           </div>

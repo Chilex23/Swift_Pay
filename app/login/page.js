@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="h-screen flex">
-      <div className="bg-[#F3F4F6] h-full w-[40rem] px-10 relative">
+      <div className="bg-[#F3F4F6] h-full w-[40rem] px-10 relative hidden md:block">
         <Link
           className="mb-2 flex h-20 items-end justify-start rounded-md p-4 md:h-20"
           href="/"
@@ -51,7 +51,7 @@ export default function Page() {
       </div>
 
       <div className="w-full h-full">
-        <div className="w-fit mx-auto mt-36 p-6">
+        <div className="w-fit mx-auto mt-16 md:mt-36 p-6">
           <p className="text-3xl font-semibold">Hi, Welcome! 👋</p>
           <div className="mt-4">
             <label id="account-number" className="text-sm font-medium">

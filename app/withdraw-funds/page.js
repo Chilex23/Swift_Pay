@@ -34,7 +34,7 @@ export default function Page() {
       </div>
       {/* HEader */}
       {/* STEPS */}
-      <div className="mt-6 flex gap-10 w-fit mx-auto">
+      <div className="mt-6 flex gap-2 md:gap-10 w-fit mx-auto">
         <div className="flex gap-2 items-center">
           <div
             className={clsx(
@@ -67,7 +67,7 @@ export default function Page() {
       {step === 1 ? (
         <WithdrawFundsForm setStepFunc={setStep} />
       ) : (
-        <div className="bg-white px-6 py-10 mt-20 w-1/3 mx-auto rounded-2xl">
+        <div className="bg-white px-2 md:px-6 py-10 mt-20 w-[95%] lg:w-1/3 mx-auto rounded-2xl">
           <div className="mb-5">
             <p className="font-semibold text-center text-2xl">
               Enter OTP to proceed with transaction

@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <div>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -98,11 +98,11 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-3xl font-semibold">Current Plan</h2>
+      <h2 className="text-3xl font-semibold mt-[5rem] md:mt-0">Current Plan</h2>
       {/* Header */}
       {/* Banner */}
       <div className="p-8 bg-[#111827] text-white mt-8 rounded-xl">
-        <div className="flex justify-between w-4/5">
+        <div className="flex flex-col lg:flex-row gap-y-10 justify-between w-4/5">
           <div>
             <p className="font-medium text-sm">Trading Plan</p>
             <div className="flex gap-2 mt-4">
@@ -110,7 +110,7 @@ export default function Page() {
               <Image src="/gold-trophy.png" width={23} height={23} />
             </div>
 
-            <div className="flex mt-24 gap-16">
+            <div className="flex flex-wrap mt-24 gap-16">
               <div>
                 <p className="text-sm text-[#F3F4F6]">Status</p>
                 <p className="font-medium">Ongoing</p>
@@ -156,10 +156,10 @@ export default function Page() {
         </div>
 
         <div className="mt-6">
-          <button className="btn mt-4 mr-5 w-fit text-white px-8 font-semibold bg-[#1F2937] border-none">
+          <button className="btn mt-4 mr-5 w-full lg:w-fit text-white px-8 font-semibold bg-[#1F2937] border-none">
             Cancel Package
           </button>
-          <button className="btn mt-4 w-fit text-white px-16 font-semibold bg-[#6366F1] border-none">
+          <button className="btn mt-4 w-full lg:w-fit text-white px-16 font-semibold bg-[#6366F1] border-none">
             Change Plan
           </button>
         </div>

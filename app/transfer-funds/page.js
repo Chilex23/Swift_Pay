@@ -4,7 +4,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
-    <div className="h-screen bg-[#F9FAFB]">
+    <div className="min-h-screen bg-[#F9FAFB]">
       {/* HEader */}
       <div className="px-10 py-4 border-b-2 border-gray-300 flex justify-between bg-white">
         <Link href={"/dashboard"} className="flex gap-x-4 text-black md:w-40">
@@ -25,7 +25,7 @@ export default function Page() {
         </Link>
       </div>
       {/* HEader */}
-      <div className="w-1/3 px-6 py-3 mx-auto mt-20">
+      <div className="lg:w-1/3 px-6 py-3 mx-auto mt-20">
         <h2 className="text-2xl font-semibold text-center">
           Send Funds to a swiftie
         </h2>

@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <>
       {/* Header for username */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="hidden md:flex items-center justify-between mt-[5rem] md:mt-1 mb-12">
         <div>
           <p className="flex flex-col">
             <span className="text-xl font-semibold">Welcome, Ghost 👋</span>
@@ -95,30 +95,30 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-3xl font-semibold">Referrals</h2>
+      <h2 className="text-3xl font-semibold mt-[5rem] md:mt-0">Referrals</h2>
       {/* Header */}
       {/* Referral Wrapper */}
-      <div className="bg-[#111827] text-white mt-10 rounded-xl p-10 flex justify-between items-center gap-x-5">
-        <div className="w-2/4">
+      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-6 md:p-10 flex justify-between items-center md:gap-x-5">
+        <div className="w-full md::w-2/4">
           <p className="text-3xl font-semibold">Refer a friend and earn $5</p>
           <p className="font-normal leading-6s text-gray-100 mt-4">
             Share your referral code and get $5 when your refer signs up and
             make transactions of over $500
           </p>
-          <div className="flex gap-x-4 mt-10">
+          <div className="flex flex-col md:flex-row gap-4 mt-10">
             <input
               name="referral_link"
               type="text"
               placeholder="Enter the referral link here"
-              className="block rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-[#4B5563]"
+              className="block rounded-md border border-gray-200 py-2 pl-4 h-12 text-sm outline-2 placeholder:text-[#4B5563]"
             />
-            <button className="flex items-center gap-x-1 bg-[#6366F1] py-2 px-4 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
+            <button className="flex items-center justify-center gap-x-1 bg-[#6366F1] py-3 md:py-2 md:px-4 rounded-lg text-white hover:shadow-lg hover:scale-105 transition-all">
               <LinkIcon className="w-6" />
               <span>Copy Link</span>
             </button>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Image
             src="/wallet.png"
             width={200}
@@ -130,8 +130,8 @@ export default function Page() {
       </div>
       {/* Referral Wrapper */}
       {/* Info Card */}
-      <div className="mt-6 flex gap-10">
-        <div className="flex items-center gap-5">
+      <div className="mt-10 md:mt-6 flex flex-col gap-10">
+        <div className="flex items-center justify-between md:justify-normal gap-5">
           <p className="font-medium flex items-center gap-3">
             Number of referrals{" "}
             <span className="text-2xl font-semibold">4</span>
@@ -140,10 +140,10 @@ export default function Page() {
             <UserIcon className="w-6" />
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <p className="font-medium">Total Earnings</p>
-          <p className="flex items-center gap-3 text-sm">
-            <span className="text-2xl font-semibold">$100,000.35</span> = 1.5
+          <p className="flex items-center md:gap-3 text-sm">
+            <span className="text-xl md:text-2xl font-semibold">$100,000.35</span> = 1.5
             BTC
           </p>
           <div className="p-3 bg-[#EEF2FF] rounded-full">
@@ -153,7 +153,7 @@ export default function Page() {
       </div>
       {/* Info Card */}
       {/* Table */}
-      <table className="hidden min-w-full text-gray-900 md:table mt-10">
+      <table className="min-w-full text-gray-900 table mt-10">
         <thead className="rounded-lg text-left text-sm font-normal bg-[#F9FAFB]">
           <tr>
             <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
