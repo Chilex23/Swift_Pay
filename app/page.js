@@ -5,6 +5,7 @@ import {
   ChevronRightIcon,
   ChevronLeftIcon,
 } from "@heroicons/react/24/outline";
+import Footer from "./ui/footer";
 import NavBar from "./ui/navBar";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         {/* Nav BAr */}
         <NavBar />
         {/* Nav BAr */}
-        <div className="md:w-[60%] mx-6 md:mx-16 mt-32">
+        <div className="md:w-[60%] mx-6 md:mx-16 mt-[4.5rem] pt-24">
           <h2 className="text-3xl md:text-6xl font-bold w-fit mb-5">
             Simple and Secure Fx Trading Platorm
           </h2>
@@ -22,7 +23,7 @@ export default function Home() {
             Get started with the easiest, most secure platform to invest, and
             earn cryptocurrencies
           </p>
-          <button className="rounded-lg mt-16 md:mt-4 relative z-50 px-6 py-4 text-white font-semibold bg-[#2467E3]">
+          <button className="rounded-lg mt-16 md:mt-4 relative z-40 px-6 py-4 text-white font-semibold bg-[#2467E3]">
             Let us get started
           </button>
         </div>
@@ -66,7 +67,7 @@ export default function Home() {
           width={60}
           height={60}
           alt="dollar sign"
-          className="absolute top-24 right-9 md:top-36 Md:right-[35rem] z-20"
+          className="absolute top-0 right-4 md:top-36 md:right-[35rem] z-10"
         />
         <Image
           src="/Euro-Vector.png"
@@ -331,7 +332,7 @@ export default function Home() {
       </div>
       {/* Every Transactions */}
       {/* Reliable Opportunities */}
-      <div className="w-[95%] bg-gradient-to-r from-[#BFD6FA] to-[#E8F0FC] mt-16 mx-auto rounded-lg px-8 md:px-20  pb-10 md:pb-24 py-24 flex flex-col md:flex-row justify-between relative z-50">
+      <div className="w-[95%] bg-gradient-to-r from-[#BFD6FA] to-[#E8F0FC] mt-16 mx-auto rounded-lg px-8 md:px-20  pb-10 md:pb-24 py-24 flex flex-col md:flex-row justify-between relative z-10">
         <div className="md:w-[45%] mb-8 md:mb-0">
           <p className="text-4xl font-bold">
             Reliability, Productive, Opportunities
@@ -533,74 +534,7 @@ export default function Home() {
         </div>
       </div>
       {/* Users Carousel */}
-      {/* Footer */}
-      <footer className="bg-[#07090E] mt-16 text-white">
-        <div className="md:px-16 px-8 pt-36 pb-0">
-          <div className="flex md:flex-row flex-col justify-between items-center">
-            <div className="md:w-[36rem]">
-              <p className="font-bold text-4xl">
-                Investment plans that suits your personality
-              </p>
-              <p className="text-lg text-[#F9FAFB] mt-4">
-                We create value by sticking to our consistent investment
-                philosophy and disciplined research process
-              </p>
-            </div>
-            <button className="btn mt-8 text-white font-semibold bg-[#2467E3] border-none block">
-              Let's get started
-            </button>
-          </div>
-
-          <div className="mt-24 flex md:flex-row flex-col gap-y-6 justify-between">
-            <div>
-              <div className="w-32 flex gap-x-1 md:w-40">
-                <Image
-                  src="/LogoLight.svg"
-                  width={20}
-                  height={20}
-                  className=""
-                  alt="Swift Pay Logo"
-                />
-                <p className="text-2xl font-bold">Swift</p>
-              </div>
-              <p className="text-[#D2D5DA] mt-2">
-                Experience more than Trading.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-y-5">
-              <p className="text-sm text-[#F9FAFB]">Market</p>
-              <p className="text-sm text-[#9CA3AF]">Stocks</p>
-              <p className="text-sm text-[#9CA3AF]">Forex</p>
-            </div>
-
-            <div className="flex flex-col gap-y-5">
-              <p className="text-sm text-[#F9FAFB]">Company</p>
-              <p className="text-sm text-[#9CA3AF]">About Us</p>
-              <p className="text-sm text-[#9CA3AF]">Arbitage</p>
-            </div>
-
-            <div className="flex flex-col gap-y-5">
-              <p className="text-sm text-[#F9FAFB]">Legal</p>
-              <p className="text-sm text-[#9CA3AF]">Privacy Policy</p>
-              <p className="text-sm text-[#9CA3AF]">Terms of Service</p>
-            </div>
-
-            <div className="flex flex-col gap-y-5">
-              <p className="text-sm text-[#F9FAFB]">Support</p>
-              <p className="text-sm text-[#9CA3AF]">Help Center</p>
-              <p className="text-sm text-[#9CA3AF]">FAQ</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-24 py-8 px-12 border-t border-dashed border-[#374151]">
-          <p className="text-[#D2D5DA]">
-            Copyright© 2024. Swift. All Right Reserved.
-          </p>
-        </div>
-      </footer>
-      {/* Footer */}
+      <Footer />
     </main>
   );
 }
