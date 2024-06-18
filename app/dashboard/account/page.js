@@ -166,12 +166,12 @@ export default function Page() {
         </div>
         {/* Account Balance */}
         {/* Special Buttons */}
-        <div className="py-2 flex relative z-30 my-10 lg:my-2 items-center justify-center gap-8">
+        <div className="py-2 flex my-10 lg:my-2 items-center justify-center gap-8">
           <Link
             href={"/deposit-funds"}
             className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <p>
+            <p className="md:flex gap-1">
               Deposit <span className="hidden md:block">Funds</span>
             </p>
             <PlusIcon className="w-6" />
@@ -180,7 +180,7 @@ export default function Page() {
             href={"/withdraw-funds"}
             className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg bg-white text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <p>
+            <p className="md:flex gap-1">
               Withdraw <span className="hidden md:block">Funds</span>
             </p>
             <BanknotesIcon className="w-6" />
@@ -189,7 +189,7 @@ export default function Page() {
             href={"/transfer-funds"}
             className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg bg-white text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <p>
+            <p className="md:flex gap-1">
               Transfer <span className="hidden md:block">Funds</span>
             </p>
             <PaperAirplaneIcon className="w-6" />
