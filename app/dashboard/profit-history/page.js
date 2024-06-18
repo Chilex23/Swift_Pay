@@ -100,13 +100,15 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">Profit History</h2>
+      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">
+        Profit History
+      </h2>
       {/* Header */}
       {/* At a glance header */}
       <div className="border-t-2 border-b-2 border-gray-300 mt-7 flex flex-col md:flex-row gap-y-6 justify-between py-5">
         {/* Glance 1 */}
         <div className=" md:border-r-gray-300  md:border-r-2 md:border-t-0 px-4 pt-4">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium text-sm">Total Investment</p>
               <p className="text-2xl font-semibold mt-2">$10,032.67</p>
@@ -125,7 +127,7 @@ export default function Page() {
         {/* Glance 1 */}
         {/* Glance 2 */}
         <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium text-sm">Earned Profit</p>
               <p className="text-2xl font-semibold mt-2">$20,032.67</p>
@@ -137,7 +139,7 @@ export default function Page() {
         {/* Glance 2 */}
         {/* Glance 3 */}
         <div className="px-4 pt-4 border-t-gray-300 border-t-2  md:border-t-0">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium text-sm">Expected Profit</p>
               <p className="text-2xl font-semibold mt-2">$1,000.67</p>
@@ -264,6 +266,103 @@ export default function Page() {
           </tr>
         </tbody>
       </table>
+      <div className="my-5 md:hidden">
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem] bg-[#FEF9C3] rounded-full p-2">
+            <Image
+              src="/gold-trophy.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="Trophy"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <div className="flex items-center justify-between">
+              <p className="text-sm">
+                <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+              </p>
+              <p className="text-xs text-[#FACC15] ml-auto w-fit flex items-center gap-1">
+                <span className="h-2 w-2 bg-[#FACC15] block rounded-full">
+                  &nbsp;
+                </span>{" "}
+                Pending
+              </p>
+            </div>
+            <p className="text-xs">Expected Profit - $100 = 2.5BTC</p>
+          </div>
+          <div className="text-[#111827] flex flex-col justify-between">
+            <p className="text-xs">Due Date</p>
+            <p className="text-sm font-medium">12 Mar 2024</p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem] bg-[#FFEDD5] rounded-full p-2">
+            <Image
+              src="/bronze-trophy.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="Trophy"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <div className="flex items-center justify-between">
+              <p className="text-sm">
+                <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+              </p>
+              <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+                <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                  &nbsp;
+                </span>{" "}
+                Invested
+              </p>
+            </div>
+            <p className="text-xs">Expected Profit - $100 = 2.5BTC</p>
+          </div>
+          <div className="text-[#111827] flex flex-col justify-between">
+            <p className="text-xs">Due Date</p>
+            <p className="text-sm font-medium">12 Mar 2024</p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem] bg-[#E0E7FF] rounded-full p-2">
+            <Image
+              src="/diamond-trophy.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="Trophy"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <div className="flex items-center justify-between">
+              <p className="text-sm">
+                <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+              </p>
+              <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+                <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                  &nbsp;
+                </span>{" "}
+                Invested
+              </p>
+            </div>
+            <p className="text-xs">Expected Profit - $100 = 2.5BTC</p>
+          </div>
+          <div className="text-[#111827] flex flex-col justify-between">
+            <p className="text-xs">Due Date</p>
+            <p className="text-sm font-medium">12 Mar 2024</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

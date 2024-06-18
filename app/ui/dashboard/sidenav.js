@@ -6,7 +6,7 @@ import Image from "next/image";
 import NavLinks from "@/app/ui/dashboard/nav-links";
 import NavProvider from "../navBar.provider";
 import { NavBarContext } from "../navBar.provider";
-import SideBarNav from "../sideBar";
+import DashDrawerNav from "./dashDrawerNav";
 import {
   PhoneIcon,
   GiftIcon,
@@ -39,7 +39,21 @@ const DashNav = () => {
           </div>
         ) : (
           <div className="flex items-center justify-between gap-x-2 mx-4">
-            <p className="text-xl font-semibold">Welcome, Ghost 👋</p>
+            <Link
+              className="flex h-auto items-end justify-start rounded-md p-1 md:h-20"
+              href="/"
+            >
+              <div className="w-32 flex gap-x-2 text-black md:w-40">
+                <Image
+                  src="/Vector.png"
+                  width={20}
+                  height={20}
+                  className=""
+                  alt="Swift Pay Logo"
+                />
+                <p className="text-2xl font-bold">Swift</p>
+              </div>
+            </Link>
             <div className="flex items-center justify-between gap-x-2">
               <Image
                 src="/avatar.png"
@@ -109,7 +123,7 @@ const DashNav = () => {
           </div>
         </div>
       </>
-      <SideBarNav />
+      <DashDrawerNav />
     </>
   );
 };

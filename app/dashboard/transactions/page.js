@@ -241,6 +241,94 @@ export default function Page() {
           </tr>
         </tbody>
       </table>
+      <div className="my-5 md:hidden">
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/deposit.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Transfer . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#FACC15] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#FACC15] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Pending
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/Transfer.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/p2p.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">Hurricane@whirl</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Table for recent transactions */}
       <div className="mt-16 w-full">
         <Pagination totalPages={8} />

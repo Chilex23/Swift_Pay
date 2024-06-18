@@ -64,7 +64,10 @@ export default function Page() {
                 </Link>
               </li>
               <li className="flex flex-row gap-3 px-2 mt-3">
-                <Link href={"/dashboard/trading-plan"} className="p-3 pl-1 bg-white">
+                <Link
+                  href={"/dashboard/trading-plan"}
+                  className="p-3 pl-1 bg-white"
+                >
                   <BriefcaseIcon className="w-6 font-bold p-0" />
                   <p className="hidden md:block p-0">Trading Plan</p>
                 </Link>
@@ -98,12 +101,14 @@ export default function Page() {
         </div>
       </div>
       {/* Header for username */}
-      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">Account Summary</h2>
+      <h2 className="text-2xl font-semibold mt-[5rem] md:mt-0">
+        Account Summary
+      </h2>
       {/* At a glance header */}
       <div className="md:border-t-2 md:border-t-gray-300 mt-5 flex flex-col md:flex-row gap-y-10 justify-between py-5">
         {/* Glance 1 */}
         <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium">Account Balance</p>
               <p className="text-xl font-semibold">$10,032.67</p>
@@ -122,7 +127,7 @@ export default function Page() {
         {/* Glance 1 */}
         {/* Glance 2 */}
         <div className="border-t-gray-300 md:border-r-gray-300 border-t-2 md:border-r-2 md:border-t-0 px-4 pt-4">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium">Total Profit</p>
               <p className="text-xl font-semibold">$20,000.35</p>
@@ -141,7 +146,7 @@ export default function Page() {
         {/* Glance 2 */}
         {/* Glance 3 */}
         <div className="px-4 pt-4 border-t-gray-300 border-t-2 md:border-t-0">
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 justify-between md:justify-normal">
             <div>
               <p className="font-medium">Total Profit</p>
               <p className="text-xl font-semibold">$20,000.35</p>
@@ -166,21 +171,27 @@ export default function Page() {
           href={"/deposit-funds"}
           className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
-          <span>Deposit Fund</span>
+          <p>
+            Deposit <span className="hidden md:block">Funds</span>
+          </p>
           <PlusIcon className="w-6" />
         </Link>
         <Link
           href={"/withdraw-funds"}
           className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
-          <span>Withdraw Funds</span>
+          <p>
+            Withdraw <span className="hidden md:block">Funds</span>
+          </p>
           <BanknotesIcon className="w-6" />
         </Link>
         <Link
           href={"/transfer-funds"}
           className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
         >
-          <span>Transfer Funds</span>
+          <p>
+            Transfer <span className="hidden md:block">Funds</span>
+          </p>
           <PaperAirplaneIcon className="w-6" />
         </Link>
       </div>
@@ -225,7 +236,9 @@ export default function Page() {
       {/* Total Amount */}
       {/* Recent Transactions */}
       <div className="mt-14 flex justify-between">
-        <h2 className="text-xl md:text-2xl font-semibold">Recent Transactions</h2>
+        <h2 className="text-xl md:text-2xl font-semibold">
+          Recent Transactions
+        </h2>
         <button
           className="text-sm font-medium text-[#2563EB] underline
 "
@@ -306,9 +319,97 @@ export default function Page() {
           </tr>
         </tbody>
       </table>
+      <div className="my-5 md:hidden">
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/deposit.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Transfer . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#FACC15] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#FACC15] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Pending
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/Transfer.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/p2p.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">Hurricane@whirl</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Table for recent transactions */}
       {/* Bottom Wrapper */}
-      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-6 md:p-10 flex justify-between items-center md:gap-x-5">
+      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-10 md:p-10 flex justify-between items-center md:gap-x-5">
         <div className="w-full md::w-2/4">
           <p className="text-3xl font-semibold">Refer a friend and earn $5</p>
           <p className="font-normal leading-6s text-gray-100 mt-4">

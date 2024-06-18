@@ -102,10 +102,12 @@ export default function Page() {
       </div>
       {/* Header for username */}
       {/* Header */}
-      <h2 className="text-2xl md:text-3xl font-semibold mt-[5rem] md:mt-0">My Account</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-[5rem] md:mt-0">
+        My Account
+      </h2>
       {/* Header */}
       {/* Account Banner */}
-      <div className="bg-[#111827] h-[16rem] md:h-auto rounded-md mt-10 text-white py-10 px-8 relative">
+      <div className="bg-[#111827] h-[19rem] md:h-auto rounded-md mt-10 text-white py-10 px-8 relative">
         <Image
           src="/Ellipse-1.png"
           width={10}
@@ -164,26 +166,32 @@ export default function Page() {
         </div>
         {/* Account Balance */}
         {/* Special Buttons */}
-        <div className="py-2 hidden md:flex items-center justify-center gap-8 mt-8">
+        <div className="py-2 flex relative z-30 my-10 lg:my-2 items-center justify-center gap-8">
           <Link
             href={"/deposit-funds"}
             className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <span>Deposit Fund</span>
+            <p>
+              Deposit <span className="hidden md:block">Funds</span>
+            </p>
             <PlusIcon className="w-6" />
           </Link>
           <Link
             href={"/withdraw-funds"}
-            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black bg-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
+            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg bg-white text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <span>Withdraw Funds</span>
+            <p>
+              Withdraw <span className="hidden md:block">Funds</span>
+            </p>
             <BanknotesIcon className="w-6" />
           </Link>
           <Link
             href={"/transfer-funds"}
-            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg text-black bg-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"
+            className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 border-gray-200 border-2 py-2 px-3 rounded-lg bg-white text-black md:text-sm hover:shadow-lg hover:scale-105 transition-all"
           >
-            <span>Transfer Funds</span>
+            <p>
+              Transfer <span className="hidden md:block">Funds</span>
+            </p>
             <PaperAirplaneIcon className="w-6" />
           </Link>
         </div>
@@ -275,6 +283,94 @@ export default function Page() {
           </tr>
         </tbody>
       </table>
+      <div className="my-5 md:hidden">
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/deposit.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Transfer . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#FACC15] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#FACC15] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Pending
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/Transfer.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">msQUNkj89s7ajXM9...</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+
+        <div className="flex justify-between mt-6 border-b pb-4 border-gray-100">
+          <div className="h-[3rem]">
+            <Image
+              src="/p2p.svg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              alt="A man talking to a woman"
+              className="rounded-full"
+            />
+          </div>
+          <div className="text-[#4B5563] flex flex-col justify-between">
+            <p className="font-medium text-sm">Hurricane@whirl</p>
+            <p className="text-xs">Deposit . 12 Mar 2024</p>
+          </div>
+          <div className="text-[##111827] flex flex-col justify-between">
+            <p className="text-xs">
+              <span className="text-sm font-medium">$90 </span>= 0.05 BTC
+            </p>
+            <p className="text-xs text-[#027A48] ml-auto w-fit flex items-center gap-1">
+              <span className="h-2 w-2 bg-[#027A48] block rounded-full">
+                &nbsp;
+              </span>{" "}
+              Successful
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Table */}
     </>
   );
