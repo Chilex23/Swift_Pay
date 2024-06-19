@@ -98,7 +98,7 @@ export default function Page() {
       <h2 className="text-3xl font-semibold mt-[5rem] md:mt-0">Referrals</h2>
       {/* Header */}
       {/* Referral Wrapper */}
-      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-6 md:p-10 flex justify-between items-center md:gap-x-5">
+      <div className="bg-[#111827] text-white mt-16 rounded-xl px-4 py-10 md:p-10 flex justify-between items-center md:gap-x-5">
         <div className="w-full md::w-2/4">
           <p className="text-3xl font-semibold">Refer a friend and earn $5</p>
           <p className="font-normal leading-6s text-gray-100 mt-4">
@@ -146,7 +146,7 @@ export default function Page() {
             <span className="text-xl md:text-2xl font-semibold">$100,000.35</span> = 1.5
             BTC
           </p>
-          <div className="p-3 bg-[#EEF2FF] rounded-full">
+          <div className="p-3 ml-auto sm:ml-0 bg-[#EEF2FF] rounded-full">
             <WalletIcon className="w-6" />
           </div>
         </div>

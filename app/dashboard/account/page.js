@@ -166,7 +166,7 @@ export default function Page() {
         </div>
         {/* Account Balance */}
         {/* Special Buttons */}
-        <div className="py-2 flex my-10 lg:my-2 items-center justify-center gap-8">
+        <div className="py-2 relative z-30 flex my-10 lg:my-2 items-center justify-center gap-8">
           <Link
             href={"/deposit-funds"}
             className="flex flex-col gap-y-1 text-xs md:flex-row items-center gap-x-2 bg-violet-500 py-2 px-3 rounded-lg text-white md:text-sm hover:shadow-lg hover:scale-105 transition-all"

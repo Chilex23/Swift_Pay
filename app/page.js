@@ -239,9 +239,9 @@ export default function Home() {
       {/* Alternatives */}
       {/* Every Transactions */}
       <div className="bg-[#14181F] mt-16 text-white py-20">
-        <div className="w-[90%] mx-auto rounded-lg px-10 bg-[#1B1F28] flex flex-col md:flex-row justify-between">
+        <div className="w-[95%] mx-auto rounded-lg px-10 bg-[#1B1F28] flex flex-col md:flex-row justify-between">
           <div className="md:mx-10 md:w-2/5 py-16">
-            <p className="text-4xl font-bold">
+            <p className="text-3xl md:text-4xl font-bold">
               Every transaction comes easy and 100% seamless
             </p>
             <p className="mt-8 text-lg">
@@ -400,7 +400,7 @@ export default function Home() {
       <h2 className="text-4xl font-bold mt-16 md:-16 w-fit mx-auto">
         News and Analysis
       </h2>
-      <div className="grid md:grid-cols-3 grid-rows-1 mx-16 mt-10 gap-x-8">
+      <div className="grid md:grid-cols-3 grid-rows-1 mx-16 mt-10 gap-8">
         {/* Card 1 */}
         <div>
           <div>

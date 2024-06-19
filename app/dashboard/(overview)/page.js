@@ -201,7 +201,7 @@ export default function Page() {
         {/* Total 1 */}
         <div className="flex items-center gap-x-3">
           <Image src="/profit.png" width={25} height={25} alt="Money" />
-          <div>
+          <div className="ml-6 md:ml-0">
             <p className="text-sm">Total Deposit</p>
             <p>
               <span className="text-lg font-semibold">$100,000.35</span> = 3.5

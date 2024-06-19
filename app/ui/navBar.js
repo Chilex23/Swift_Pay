@@ -89,7 +89,17 @@ const NavBarNav = () => {
             >
               Pricing
             </Link>
-            <p>Affiliate Program</p>
+            <Link
+              href={"/affiliate-program"}
+              className={clsx(
+                "hover:bg-white hover:text-black p-2 rounded-md",
+                {
+                  "bg-[#2467E3] text-white": pathname === "/affiliate-program",
+                }
+              )}
+            >
+              Affiliate Program
+            </Link>
             <Link
               href={"/about-us"}
               className={clsx(
@@ -101,7 +111,17 @@ const NavBarNav = () => {
             >
               About Us
             </Link>
-            <p>Support</p>
+            <Link
+              href={"/support"}
+              className={clsx(
+                "hover:bg-white hover:text-black p-2 rounded-md",
+                {
+                  "bg-[#2467E3] text-white": pathname === "/support",
+                }
+              )}
+            >
+              Support
+            </Link>
             <div className="ml-10 flex items-center gap-x-5">
               <Link
                 href={"/login"}

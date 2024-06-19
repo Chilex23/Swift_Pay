@@ -25,7 +25,7 @@ const SideBarNav = () => {
           </Link>
         </div>
         <div className="mb-7">
-          <Link href={"/"} onClick={toggleSideBarHidden}>
+          <Link href={"/affiliate-program"} onClick={toggleSideBarHidden}>
             Affiliate Program
           </Link>
         </div>
@@ -34,9 +34,14 @@ const SideBarNav = () => {
             About Us
           </Link>
         </div>
-        <div>
-          <Link href={"/"} onClick={toggleSideBarHidden}>
+        <div className="mb-7">
+          <Link href={"/support"} onClick={toggleSideBarHidden}>
             Support
+          </Link>
+        </div>
+        <div>
+          <Link href={"/login"} onClick={toggleSideBarHidden}>
+            Log In
           </Link>
         </div>
       </div>

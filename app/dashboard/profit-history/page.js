@@ -132,7 +132,7 @@ export default function Page() {
               <p className="font-medium text-sm">Earned Profit</p>
               <p className="text-2xl font-semibold mt-2">$20,032.67</p>
             </div>
-            <WalletIcon className="w-6" />
+            <WalletIcon className="w-10" />
           </div>
           <p className="text-sm mt-2">= 1.5 BTC</p>
         </div>
@@ -144,7 +144,7 @@ export default function Page() {
               <p className="font-medium text-sm">Expected Profit</p>
               <p className="text-2xl font-semibold mt-2">$1,000.67</p>
             </div>
-            <BanknotesIcon className="w-6" />
+            <BanknotesIcon className="w-10" />
           </div>
           <p className="text-sm mt-2">0.5 BTC</p>
         </div>
